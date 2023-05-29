@@ -14,7 +14,6 @@ namespace PlaywrightDemo
         [Test]
         public async Task Test1()
         {
-            Page.SetDefaultTimeout(10);
 
             var linkLogin = Page.Locator("text=Login");
             await linkLogin.ClickAsync();
